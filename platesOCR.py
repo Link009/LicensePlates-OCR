@@ -102,9 +102,9 @@ def cleanOCR(borders):
     return detectedOCR
 
 
-# adaptiveThreshold(plates)
-# resize(processed)
-# addBorder(resized)
+adaptiveThreshold(plates)
+resize(processed)
+addBorder(resized)
 platesList = cleanOCR(bordered)
 
 print(platesList)
