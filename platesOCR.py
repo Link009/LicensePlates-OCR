@@ -36,9 +36,9 @@ def resize(processed):
         ratio = 200.0 / image.shape[1]
         dim = (200, int(image.shape[0] * ratio))
 
-        resizedLinear = cv2.resize(image, dim, interpolation=cv2.INTER_CUBIC)
+        resizedCubic = cv2.resize(image, dim, interpolation=cv2.INTER_CUBIC)
 
-        cv2.imwrite("resized\\plate{}.png".format(i), resizedLinear)
+        cv2.imwrite("resized\\plate{}.png".format(i), resizedCubic)
 
 
 def addBorder(resized):
