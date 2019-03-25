@@ -1,11 +1,7 @@
 import cv2
-import tesserocr
 import numpy as np
-from matplotlib import pyplot as plt
 import glob
-import os
 import pytesseract
-import string
 
 plates = glob.glob("plates\\*.png")
 processed = glob.glob("processed\\*.png")
